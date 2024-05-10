@@ -4,6 +4,7 @@
 // import PropImplement from "./components/PropImplement";
 import ChildToParentProp from "./components/ChildToParentProp";
 import Fragments from "./components/Fragments";
+import LifeCycleA from "./components/LifeCycleA";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -14,7 +15,8 @@ function App() {
       {/* <ColorPallete /> */}
       {/* <PropImplement btn_color="#ff1111" name="Hello"/> */}
       {/* <ChildToParentProp printChildProp={childPropHandler} /> */}
-      <Fragments />
+      {/* <Fragments /> */}
+      <LifeCycleA />
     </>
   );
 }
