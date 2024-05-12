@@ -11,6 +11,7 @@ import RefComponent from "./components/RefComponent";
 import FocusInput from "./components/FocusInput";
 import FRInput from "./components/FRInput";
 import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -27,7 +28,8 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <RefComponent /> */}
       {/* <FocusInput /> */}
-      <FRParentInput />
+      {/* <FRParentInput /> */}
+      <PortalDemo />
     </>
   );
 }
