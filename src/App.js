@@ -12,6 +12,8 @@ import FocusInput from "./components/FocusInput";
 import FRInput from "./components/FRInput";
 import FRParentInput from "./components/FRParentInput";
 import PortalDemo from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErrorBoundry from "./ErrorBoundry";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -29,7 +31,16 @@ function App() {
       {/* <RefComponent /> */}
       {/* <FocusInput /> */}
       {/* <FRParentInput /> */}
-      <PortalDemo />
+      {/* <PortalDemo /> */}
+      <ErrorBoundry>
+        <Hero heroName="Batman" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero heroName="Superman" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero heroName="Joker" />
+      </ErrorBoundry>
     </>
   );
 }
