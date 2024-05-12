@@ -8,6 +8,7 @@ import Fragments from "./components/Fragments";
 import LifeCycleA from "./components/LifeCycleA";
 import ParentComponent from "./components/ParentComponent";
 import RefComponent from "./components/RefComponent";
+import FocusInput from "./components/FocusInput";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -22,7 +23,8 @@ function App() {
       {/* <LifeCycleA /> */}
       {/* <PureComponent /> */}
       {/* <ParentComponent /> */}
-      <RefComponent />
+      {/* <RefComponent /> */}
+      <FocusInput />
     </>
   );
 }
