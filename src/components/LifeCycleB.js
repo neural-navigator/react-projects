@@ -17,6 +17,20 @@ export class LifeCycleB extends Component {
     componentDidMount() {
         console.log("LifecycleB componentDidMount");
     }
+    shouldComponentUpdate() {
+      console.log("shouldComponentUpdate rendered in lifecycle B");
+      return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+      console.log("Lifecycle B getSnapshotBeforeUpdate is called");
+      return null;
+    }
+
+    componentDidUpdate() {
+      console.log("Lifeycle B componentDidUpdate");
+    }
+
     
   render() {
     console.log("Render method in LifecycleB called");
