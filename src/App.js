@@ -14,6 +14,8 @@ import FRParentInput from "./components/FRParentInput";
 import PortalDemo from "./components/PortalDemo";
 import Hero from "./components/Hero";
 import ErrorBoundry from "./ErrorBoundry";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -32,7 +34,7 @@ function App() {
       {/* <FocusInput /> */}
       {/* <FRParentInput /> */}
       {/* <PortalDemo /> */}
-      <ErrorBoundry>
+      {/* <ErrorBoundry>
         <Hero heroName="Batman" />
       </ErrorBoundry>
       <ErrorBoundry>
@@ -40,7 +42,9 @@ function App() {
       </ErrorBoundry>
       <ErrorBoundry>
         <Hero heroName="Joker" />
-      </ErrorBoundry>
+      </ErrorBoundry> */}
+      <ClickCounter />
+      <HoverCounter />
     </>
   );
 }
