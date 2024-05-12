@@ -9,6 +9,8 @@ import LifeCycleA from "./components/LifeCycleA";
 import ParentComponent from "./components/ParentComponent";
 import RefComponent from "./components/RefComponent";
 import FocusInput from "./components/FocusInput";
+import FRInput from "./components/FRInput";
+import FRParentInput from "./components/FRParentInput";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -24,7 +26,8 @@ function App() {
       {/* <PureComponent /> */}
       {/* <ParentComponent /> */}
       {/* <RefComponent /> */}
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <FRParentInput />
     </>
   );
 }
