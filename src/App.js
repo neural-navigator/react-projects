@@ -7,6 +7,7 @@ import ChildToParentProp from "./components/ChildToParentProp";
 import Fragments from "./components/Fragments";
 import LifeCycleA from "./components/LifeCycleA";
 import ParentComponent from "./components/ParentComponent";
+import RefComponent from "./components/RefComponent";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -21,6 +22,7 @@ function App() {
       {/* <LifeCycleA /> */}
       {/* <PureComponent /> */}
       {/* <ParentComponent /> */}
+      <RefComponent />
     </>
   );
 }
