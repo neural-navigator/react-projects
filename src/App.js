@@ -16,6 +16,10 @@ import Hero from "./components/Hero";
 import ErrorBoundry from "./ErrorBoundry";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounter2 from "./components/ClickCounter2";
+import HoverCounter2 from "./components/HoverCounter2";
+import User from "./components/User";
+import Counter3 from "./components/Counter3";
 
 function App() {
   // const childPropHandler = (val) => console.log(`${val} printed in parent!`)
@@ -43,8 +47,17 @@ function App() {
       <ErrorBoundry>
         <Hero heroName="Joker" />
       </ErrorBoundry> */}
-      <ClickCounter />
-      <HoverCounter />
+      {/* <ClickCounter />
+      <HoverCounter /> */}
+      {/* <ClickCounter2 />
+      <HoverCounter2 /> */}
+      {/* <User render={(isLoggedIn)=> isLoggedIn? "Satya": "Guest"}/> */}
+      <Counter3 render={(count, incrementCounter) => (
+        <ClickCounter2 count={count} incrementCounter={incrementCounter} />
+      )}/>
+      <Counter3 render={(count, incrementCounter) => (
+        <HoverCounter2 count={count} incrementCounter={incrementCounter} />
+      )}/>
     </>
   );
 }
